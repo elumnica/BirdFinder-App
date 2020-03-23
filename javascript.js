@@ -13,6 +13,8 @@ var queryURL =
   "/recent/notable?detail=full";
 var regionCode = "US-NY";
 
+var searched  = $("#search")
+
 // TODO
 function clear() {
   // $("").empty();
@@ -33,6 +35,18 @@ var geoQuery = {
     "X-eBirdApiToken": "vtvt2pqn28os"
   }
 };
+
+var searchedQuery = {
+  url: "https://api.ebird.org/v2/data/obs/US-NY/recent",
+  method: "GET",
+  timeout: 0,
+  headers: {
+    "X-eBirdApiToken": "vtvt2pqn28os"
+  }
+}
+
+
+
 let temp = [];
 
 //  Get request for birds in US-NY, return name, location, and coordinates
@@ -87,3 +101,6 @@ $(document).ready(function() {
   $(".carousel").carousel();
 });
 // CAROUSEL FUNCTIONALITY
+
+
+console.log(searched)
