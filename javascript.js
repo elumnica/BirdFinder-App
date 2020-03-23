@@ -17,7 +17,7 @@ var regionCode = "US-NY";
 function clear() {
   // $("").empty();
 }
-
+// hellllo
 // Country Codes API
 var settings2 = {
   url: "https://restcountries.eu/rest/v2/all",
